@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum APIConfiguration {
     private static let overrideKey = "api.baseURL"
@@ -46,10 +47,6 @@ enum APIConfiguration {
 
     static let requestTimeout: TimeInterval = 20
     static let deviceName: String = {
-        #if targetEnvironment(simulator)
-        return "iOS Simulator"
-        #else
         return UIDevice.current.name
-        #endif
     }()
 }
