@@ -4,7 +4,7 @@ import UIKit
 enum APIConfiguration {
     private static let overrideKey = "api.baseURL"
 
-    static let fallbackURL = URL(string: "https://ticketledger.space")!
+    static let fallbackURL = URL(string: "https://ticket-app.space")!
 
     static var baseURL: URL {
         if let stored = UserDefaults.standard.string(forKey: overrideKey),
